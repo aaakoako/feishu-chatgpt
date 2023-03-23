@@ -2,12 +2,17 @@ package openai
 
 import (
 	"errors"
+	"math/rand"
+	"time"
 )
 
 const (
-	maxTokens   = 2000
-	temperature = 0.7
-	engine      = "gpt-3.5-turbo"
+	maxTokens                = 2000
+	temperature              = 1.0
+	temperature_min          = 0.3
+	temperature_max          = 1.5
+	using_random_temperature = true
+	engine                   = "gpt-3.5-turbo"
 )
 
 type Messages struct {
@@ -41,12 +46,27 @@ type ChatGPTRequestBody struct {
 	PresencePenalty  int        `json:"presence_penalty"`
 }
 
+// 生成步长为0.1的随机浮点数temperature
+func randomTemperature() float32 {
+	rand.Seed(time.Now().UnixNano()) // 设置随机数种子
+	step := 1.0
+	randomFloat := float64(temperature_min) + float64(rand.Float32()*(temperature_max-temperature_min))/step*step // 生成随机浮点数
+	result := float32(int(randomFloat*10)) / 10                                                                   // 转换为最小单位为0.1的浮点数
+	return result
+}
+
 func (gpt ChatGPT) Completions(msg []Messages) (resp Messages, err error) {
+	var now_temp float32
+	if using_random_temperature {
+		now_temp = randomTemperature()
+	} else {
+		now_temp = temperature
+	}
 	requestBody := ChatGPTRequestBody{
 		Model:            engine,
 		Messages:         msg,
 		MaxTokens:        maxTokens,
-		Temperature:      temperature,
+		Temperature:      now_temp,
 		TopP:             1,
 		FrequencyPenalty: 0,
 		PresencePenalty:  0,
