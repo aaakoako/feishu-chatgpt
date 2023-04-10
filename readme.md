@@ -8,8 +8,10 @@
     <p align='center'>
     <img src='https://user-images.githubusercontent.com/50035229/224493411-085ba405-81cd-4972-b87b-74a2e811f23d.png' alt='语音对话' width='800'/>
     <img src='https://user-images.githubusercontent.com/50035229/223590381-ed38db74-39f3-4e77-bd3a-aaa54d679286.png' alt='角色扮演' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/228092540-bb9c74de-fccb-4d07-9797-f3fe1fb3705a.png' alt='角色列表' width='800'/>
     <img src='https://user-images.githubusercontent.com/50035229/223590817-37a56eac-ab6e-4293-862a-de0988ac50b7.png' alt='文字成图' width='800'/>
     <img src='https://user-images.githubusercontent.com/50035229/224531308-378a5bc3-2964-4e32-905f-8237dafc3f91.png' alt='图片变体' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/227900488-10a53176-f4e3-4b9e-bf9e-b60d958aefc8.png' alt='余额查询' width='800'/>
     <img src='https://user-images.githubusercontent.com/50035229/224531775-3f0e1e1b-a373-4774-a8f0-e120ccba6670.png' alt='帮助菜单' width='800'/>
     </p>
 
@@ -24,14 +26,53 @@
     🚀 Feishu OpenAI 🚀
 </p>
 
+## 🥁 号外号外!
+
+大家好呀！我们正在招募一批小伙伴来加入我们的重构项目！
+
+如果你对以下领域感兴趣，那么你就是我们正在寻找的人啦！
+
+#### 前端小伙伴
+- React！React！React！
+- 如果你还有一些B端开发经验那就更棒啦！
+- 创意？没关系，我们有设计师！
+
+#### 后端小伙伴
+- Golang语言，了解不用说！
+- 熟练掌握gin框架，开发后端就跟呼吸一样自然！
+- 对钉钉、飞书、企微等平台的SDK有所了解，能够开发和集成一系列令人惊叹的功能！
+- 精通平台化细节思维，让你开发的高效服务端热更新脚本惊艳全场！
+- 轻松驾驭Docker容器化技术，随心所欲地部署代码！
+- 有一些支付功能开发经验，真正能让钞票砰砰砰地飞！
+- 了解部分Linux脚本和socket编程
+- 上述满足一些即可
+
+#### 测试小伙伴
+- 不是小姐姐也没关系哦~
+
+
+gpt应用没思路？要不试试加入我们的项目组，成为这个充满活力、热情的团队的一员吧！
+
+我们队员有
+- [EX-chatGPT](https://github.com/circlestarzero/EX-chatGPT)和[ChatPaper的维护者](https://github.com/kaixindelele/ChatPaper)-->[cc](https://github.com/circlestarzero)
+- [钉钉GPT的维护者](https://github.com/eryajf/chatgpt-dingtalk)-->[eryajf](https://github.com/eryajf)
+- [飞书GPT的维护者](https://github.com/Leizhenpeng/feishu-chatgpt)-->[river](https://space.bilibili.com/66891783)
+- 正在心动的你！
+
+有费用！不会白嫖！
+
+想来玩就戳我微信吧~~`laolei_forkway`~~
+
 
 ## 👻 机器人功能
 
-🗣 语音交流：私人直接与机器人畅所欲言 
+🗣 语音交流：私人直接与机器人畅所欲言
 
 💬 多话题对话：支持私人和群聊多话题讨论，高效连贯
 
 🖼 文本成图：支持文本成图和以图搜图
+
+🛖 场景预设：内置丰富场景列表，一键切换AI角色
 
 🎭 角色扮演：支持场景模式，增添讨论乐趣和创意
 
@@ -43,7 +84,7 @@
 
 👍 交互式反馈：即时获取机器人处理结果
 
-🏞 场景预设：内置丰富场景预设，方便用户管理场景 🚧
+🎰 余额查询：即时获取token消耗情况
 
 🔙 历史回档：轻松回档历史对话，继续话题讨论 🚧
 
@@ -59,12 +100,17 @@
 
 📊 表格分析：轻松导入飞书表格，提升数据分析效率 🚧
 
+🍊 私有数据训练：利用公司产品信息对GPT二次训练，更好地满足客户个性化需求 🚧
+
+
 
 ## 🌟 项目特点
 
-- 🍏 基于 OpenAI-[gpt-3.5-turbo](https://platform.openai.com/account/api-keys) 接口
-- 🍎 通过 lark，将 ChatGPT 接入[飞书](https://open.feishu.cn/app)
-- 🥒 支持[Serverless 云函数](https://github.com/serverless-devs/serverless-devs)、[本地环境](https://dashboard.cpolar.com/login)、[Docker](https://www.docker.com/)、[二进制安装包](https://github.com/Leizhenpeng/feishu-chatgpt/releases/)多种渠道部署
+- 🍏 对话基于 OpenAI-[gpt-3.5-turbo](https://platform.openai.com/account/api-keys) 接口
+- 🍎 通过 lark，将 ChatGPT 接入[飞书](https://open.feishu.cn/app)和[飞书国际版](https://www.larksuite.com/)
+- 🥒
+  支持[Serverless 云函数](https://github.com/serverless-devs/serverless-devs)、[本地环境](https://dashboard.cpolar.com/login)、[Docker](https://www.docker.com/)、[二进制安装包](https://github.com/Leizhenpeng/feishu-chatgpt/releases/)
+  等多种渠道部署
 - 🍋 基于[goCache](https://github.com/patrickmn/go-cache)内存键值对缓存
 
 ## 项目部署
@@ -209,7 +255,8 @@ s deploy
     <summary>使用 Railway 平台一键部署</summary>
 
 
-Railway 是一家国外的 Serverless 平台，支持多种语言，可以一键将 Github 上的代码仓库部署到 Railway 平台，然后在 Railway 平台上配置环境变量即可。部署本项目的流程如下：
+Railway 是一家国外的 Serverless 平台，支持多种语言，可以一键将 Github 上的代码仓库部署到 Railway 平台，然后在 Railway
+平台上配置环境变量即可。部署本项目的流程如下：
 
 #### 1. 生成 Railway 项目
 
@@ -230,7 +277,8 @@ Railway 是一家国外的 Serverless 平台，支持多种语言，可以一键
 
 <img src='https://user-images.githubusercontent.com/50035229/225006236-57cb3c8a-1b7d-4bfe-9c9b-099cb9179027.png' alt='Railway 域名' width='500px'/>
 
-如果不确定自己部署是否成功，可以通过访问上述获取到的域名 (https://xxxxxxxx.railway.app/ping) 来查看是否返回了`pong`，如果返回了`pong`，说明部署成功。
+如果不确定自己部署是否成功，可以通过访问上述获取到的域名 (https://xxxxxxxx.railway.app/ping) 来查看是否返回了`pong`
+，如果返回了`pong`，说明部署成功。
 
 </details>
 
@@ -251,11 +299,14 @@ docker run -d --name feishu-chatgpt -p 9000:9000 \
 --env HTTP_PROXY="" \
 feishu-chatgpt:latest
 ```
+
 注意:
+
 - `BOT_NAME` 为飞书机器人名称，例如 `chatGpt`
 - `OPENAI_KEY` 为openai key，多个key用逗号分隔，例如 `sk-xxx1,sk-xxx2,sk-xxx3`
 - `HTTP_PROXY` 为宿主机的proxy地址，例如 `http://host.docker.internal:7890`,没有代理的话，可以不用设置
 - `API_URL` 为openai api 接口地址，例如 `https://api.openai.com`, 没有反向代理的话，可以不用设置
+
 ---
 
 小白简易化 docker 部署
@@ -279,7 +330,57 @@ dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
 卡片回调地址: http://IP:9000/webhook/card
 
 把它填入飞书后台
+
+--- 
+
+部署azure版本
+
+```bash
+docker build -t feishu-chatgpt:latest .
+docker run -d --name feishu-chatgpt -p 9000:9000 \
+--env APP_ID=xxx \
+--env APP_SECRET=xxx \
+--env APP_ENCRYPT_KEY=xxx \
+--env APP_VERIFICATION_TOKEN=xxx \
+--env BOT_NAME=chatGpt \
+--env AZURE_ON=true \
+--env AZURE_API_VERSION=xxx \
+--env AZURE_RESOURCE_NAME=xxx \
+--env AZURE_DEPLOYMENT_NAME=xxx \
+--env AZURE_OPENAI_TOKEN=xxx \
+feishu-chatgpt:latest
+```
+
+注意:
+
+- `BOT_NAME` 为飞书机器人名称，例如 `chatGpt`
+- `AZURE_ON` 为是否使用azure ,请填写 `true`
+- `AZURE_API_VERSION` 为azure api版本 例如 `2023-03-15-preview`
+- `AZURE_RESOURCE_NAME` 为azure 资源名称 类似 `https://{AZURE_RESOURCE_NAME}.openai.azure.com`
+- `AZURE_DEPLOYMENT_NAME` 为azure 部署名称 类似 `https://{AZURE_RESOURCE_NAME}.openai.azure.com/deployments/{AZURE_DEPLOYMENT_NAME}/chat/completions`
+- `AZURE_OPENAI_TOKEN` 为azure openai token
+
+</details>
+
+<details>
+    <summary>docker-compose 部署</summary>
 <br>
+
+编辑 docker-compose.yaml，通过 environment 配置相应环境变量（或者通过 volumes 挂载相应配置文件），然后运行下面的命令即可
+
+```bash
+# 构建镜像
+docker compose build
+
+# 启动服务
+docker compose up -d
+
+# 停止服务
+docker compose down
+```
+
+事件回调地址: http://IP:9000/webhook/event
+卡片回调地址: http://IP:9000/webhook/card
 
 </details>
 
@@ -288,7 +389,8 @@ dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
 <br>
 
 1. 进入[release 页面](https://github.com/Leizhenpeng/feishu-chatgpt/releases/) 下载对应的安装包
-2. 解压安装包,修改 config.example.yml 中配置信息,另存为 config.yml
+2. 解压安装包,修改 config.example.yml 中配置信息,另存为 config.yaml
+3. 目录下添加文件 `role_list.yaml`，自定义角色，可以从这里获取：[链接](https://github.com/Leizhenpeng/feishu-chatgpt/blob/master/code/role_list.yaml)
 3. 运行程序入口文件 `feishu-chatgpt`
 
 事件回调地址: http://IP:9000/webhook/event
@@ -311,6 +413,7 @@ dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
       <img src='https://user-images.githubusercontent.com/50035229/223944230-aff586be-31cc-40de-9b1a-7d4e259d54dd.png' alt='' width='800'/>
       <img src='https://user-images.githubusercontent.com/50035229/223944350-917d115c-6c82-4d8b-9ec8-b5c82331a2dc.png' alt='' width='800'/>
       <img src='https://user-images.githubusercontent.com/50035229/223944381-97396156-f5e2-467f-aaf6-b1f6e1c446b2.png' alt='' width='800'/>
+      <img src='https://user-images.githubusercontent.com/50035229/230003546-36450f2f-b6e9-4292-8b40-3a4aa8a05a64.png' alt='' width='800'/>
       <img src='https://user-images.githubusercontent.com/50035229/223945122-f7ab3d9a-6742-43d2-970e-ddb0f284c7fa.png' alt='' width='800'/>
       <img src='https://user-images.githubusercontent.com/50035229/223944507-8d1a08d7-8b5b-4f32-a90d-fd338164ec82.png' alt='' width='800'/>
       <img src='https://user-images.githubusercontent.com/50035229/223944515-fb505e84-c840-484a-8df5-612f60bf27ea.png' alt='' width='800'/>
@@ -319,43 +422,54 @@ dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
 </details>
 
 
-- 获取 [OpenAI](https://platform.openai.com/account/api-keys) 的 KEY
+- 获取 [OpenAI](https://platform.openai.com/account/api-keys) 的 KEY( 🙉 下面有免费的 KEY 供大家测试部署 )
 - 创建 [飞书](https://open.feishu.cn/) 机器人
-  1. 前往[开发者平台](https://open.feishu.cn/app?lang=zh-CN)创建应用,并获取到 APPID 和 Secret
-  2. 前往`应用功能-机器人`, 创建机器人
-  3. 从 cpolar、serverless 或 Railway 获得公网地址，在飞书机器人后台的 `事件订阅` 板块填写。例如，
-     - `http://xxxx.r6.cpolar.top`为 cpolar 暴露的公网地址
-     - `/webhook/event`为统一的应用路由
-     - 最终的回调地址为 `http://xxxx.r6.cpolar.top/webhook/event`
-  4. 在飞书机器人后台的 `机器人` 板块，填写消息卡片请求网址。例如，
-     - `http://xxxx.r6.cpolar.top`为 cpolar 暴露的公网地址
-     - `/webhook/card`为统一的应用路由
-     - 最终的消息卡片请求网址为 `http://xxxx.r6.cpolar.top/webhook/card`
-  5. 在事件订阅板块，搜索三个词`机器人进群`、 `接收消息`、 `消息已读`, 把他们后面所有的权限全部勾选。
-  进入权限管理界面，搜索`图片`, 勾选`获取与上传图片或文件资源`。
-  最终会添加下列回调事件
-     - im:resource(获取与上传图片或文件资源)
-     - im:message
-     - im:message.group_at_msg(获取群组中所有消息)
-     - im:message.group_at_msg:readonly(接收群聊中@机器人消息事件)
-     - im:message.p2p_msg(获取用户发给机器人的单聊消息)
-     - im:message.p2p_msg:readonly(读取用户发给机器人的单聊消息)
-     - im:message:send_as_bot(获取用户在群组中@机器人的消息)
-     - im:chat:readonly(获取群组信息)
-     - im:chat(获取与更新群组信息)
- 
+    1. 前往[开发者平台](https://open.feishu.cn/app?lang=zh-CN)创建应用,并获取到 APPID 和 Secret
+    2. 前往`应用功能-机器人`, 创建机器人
+    3. 从 cpolar、serverless 或 Railway 获得公网地址，在飞书机器人后台的 `事件订阅` 板块填写。例如，
+        - `http://xxxx.r6.cpolar.top`为 cpolar 暴露的公网地址
+        - `/webhook/event`为统一的应用路由
+        - 最终的回调地址为 `http://xxxx.r6.cpolar.top/webhook/event`
+    4. 在飞书机器人后台的 `机器人` 板块，填写消息卡片请求网址。例如，
+        - `http://xxxx.r6.cpolar.top`为 cpolar 暴露的公网地址
+        - `/webhook/card`为统一的应用路由
+        - 最终的消息卡片请求网址为 `http://xxxx.r6.cpolar.top/webhook/card`
+    5. 在事件订阅板块，搜索三个词`机器人进群`、 `接收消息`、 `消息已读`, 把他们后面所有的权限全部勾选。
+       进入权限管理界面，搜索`图片`, 勾选`获取与上传图片或文件资源`。
+       最终会添加下列回调事件
+        - im:resource(获取与上传图片或文件资源)
+        - im:message
+        - im:message.group_at_msg(获取群组中所有消息)
+        - im:message.group_at_msg:readonly(接收群聊中@机器人消息事件)
+        - im:message.p2p_msg(获取用户发给机器人的单聊消息)
+        - im:message.p2p_msg:readonly(读取用户发给机器人的单聊消息)
+        - im:message:send_as_bot(获取用户在群组中@机器人的消息)
+        - im:chat:readonly(获取群组信息)
+        - im:chat(获取与更新群组信息)
+
 
 5. 发布版本，等待企业管理员审核通过
 
 更多介绍，参考[飞书上的小计算器: Go 机器人来啦](https://www.bilibili.com/video/BV12M41187rV/)
 
+## 免费 Openai_Key
+
+<a href='https://freeopenai.xyz/' >
+<img src='https://user-images.githubusercontent.com/50035229/229976556-99e8ac26-c8c3-4f56-902d-a52a7f2e50d5.png' alt='' width='330'/>
+</a>
+
+这里有些[免费的OpenAI Key](https://freeopenai.xyz/), 大家可测试使用。
+
+
 ## 更多交流
+
 
 如需协助部署，或者其他定制服务，可联系下面的WeChat，支持发票~
 
 遇到问题，可以加入飞书群沟通~
 
-<img src='./docs/talk.png' alt='' width='200'/>
+
+<img src='https://user-images.githubusercontent.com/50035229/229813025-516d09f7-7de3-46b5-8407-f0bbf8b44344.png' alt='' width='200'/>
 
 ## 交朋友 或者 鼓励一下
 

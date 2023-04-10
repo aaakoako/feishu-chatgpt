@@ -55,13 +55,8 @@ func randomTemperature() float32 {
 	return result
 }
 
-func (gpt ChatGPT) Completions(msg []Messages) (resp Messages, err error) {
-	var now_temp float32
-	if using_random_temperature {
-		now_temp = randomTemperature()
-	} else {
-		now_temp = temperature
-	}
+func (gpt *ChatGPT) Completions(msg []Messages) (resp Messages,
+	err error) {
 	requestBody := ChatGPTRequestBody{
 		Model:            engine,
 		Messages:         msg,
@@ -72,10 +67,12 @@ func (gpt ChatGPT) Completions(msg []Messages) (resp Messages, err error) {
 		PresencePenalty:  0,
 	}
 	gptResponseBody := &ChatGPTResponseBody{}
-	err = gpt.sendRequestWithBodyType(gpt.ApiUrl+"/v1/chat/completions", "POST",
-		jsonBody,
-		requestBody, gptResponseBody)
-
+	url := gpt.FullUrl("chat/completions")
+	//fmt.Println(url)
+	if url == "" {
+		return resp, errors.New("无法获取openai请求地址")
+	}
+	err = gpt.sendRequestWithBodyType(url, "POST", jsonBody, requestBody, gptResponseBody)
 	if err == nil && len(gptResponseBody.Choices) > 0 {
 		resp = gptResponseBody.Choices[0].Message
 	} else {
